@@ -1,21 +1,23 @@
 .floating-label-wrapper {
     position: relative;
+    padding-top: 5px;
 }
-
 .floating-label {
     color: #7E7E7E;
     font-size: 14px;
     position: absolute;
     pointer-events: none;
-    left: 12px;
+    left: 25px;
     top: 7px;
     transition: 0.2s ease all;
     opacity: 0;
 }
 .form-control:focus ~ .floating-label,
 .form-control:not(.empty) ~ .floating-label {
+    /*margin-top: 5px;*/
     top: -15px;
-    left: 0;
+    /*left: 0;*/
+    margin-left: -8px;
     font-size: 11px;
     opacity: 1;
 }
