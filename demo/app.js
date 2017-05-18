@@ -16,6 +16,11 @@ app.directive('withFloatingLabel', function () {
             //remove placeholder
             $element.removeAttr('placeholder');
 
+            //hide label tag assotiated with given input (if only they exist)
+            var element = document.querySelector('label[for="' +  attrs.id +  '"]');
+            if ( element )
+                element.style.display = 'none';
+
             $scope.$watch(function () {
                 if($element.val().toString().length < 1) {
                     $element.addClass('empty');
