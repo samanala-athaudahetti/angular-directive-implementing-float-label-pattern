@@ -12,6 +12,7 @@
     transition: 0.2s ease all;
     opacity: 0;
 }
+.ui-select-container:not(.empty) ~ .floating-label,
 .form-control:focus ~ .floating-label,
 .form-control:not(.empty) ~ .floating-label {
     /*margin-top: 5px;*/
