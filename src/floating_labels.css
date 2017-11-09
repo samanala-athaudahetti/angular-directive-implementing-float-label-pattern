@@ -10,8 +10,13 @@
     left: 25px;
     top: 7px;
     transition: 0.2s ease all;
+    z-index: 50;
     opacity: 0;
 }
+.input-group > div.floating-label{
+    left: 10px !important;
+}
+.ui-select-container:not(.empty) ~ .floating-label,
 .form-control:focus ~ .floating-label,
 .form-control:not(.empty) ~ .floating-label {
     /*margin-top: 5px;*/
