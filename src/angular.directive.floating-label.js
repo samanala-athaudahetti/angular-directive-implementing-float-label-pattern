@@ -47,7 +47,7 @@
                             $scope.$watch(
                                 function () { return ctrl.$viewValue; },
                                 function (newValue) {
-                                    if( angular.isUndefined(newValue) || (newValue.toString().length < 1) ) {
+                                    if( angular.isUndefined(newValue) || (null === newValue) || (newValue.toString().length < 1) ) {
                                         $element.addClass('empty');
                                     } else {
                                         $element.removeClass('empty');
